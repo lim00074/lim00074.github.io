@@ -1,0 +1,288 @@
+/*@charset "UTF-8";
+/* CSS Document */
+
+* { /*Asterix targets everything in your code*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; /*without border-box, the width would be width+padding; with the border-box, the width would not have the padding added on. It is very important for flexible website designing*/
+}
+
+html {
+	background-color: #222;
+	font-size: 100%;
+	font-family: 'Questrial', Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+@media only screen and (min-width: 100em) {
+	html {
+		font-size: 150%;
+	}
+}
+
+body {
+	background-color: #fff;
+	margin: 0;
+}
+
+header {
+	float: none;
+}
+
+img {
+	width: 100%;
+}
+
+.portfolio img {
+	border: 3px solid #000;
+	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+	width: 93%;
+	margin: 13px;
+}
+
+.portfolio-left,
+.portfolio-right {
+	width: auto;
+	float:none;
+}
+
+.logo a {
+	font-size: 0.5rem;
+	color: transparent;
+	display: block;
+	padding: 15px;
+}
+
+p,
+.contact {
+	line-height: 1.25rem;
+	margin: 0px 13px 20px 13px;
+}
+
+.contact {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.social {
+	margin-left: 20px;
+}
+
+.social1,
+.social2,
+.social3 {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-position: top;
+	background-repeat:no-repeat;
+	background-size: 100%;
+	margin-right: 3px;
+}
+
+.social1 {
+	background-image: url(../images/social-fb-01.svg);
+}
+
+.social2 {
+	background-image: url(../images/social-in-01.svg);
+}
+
+.social3 {
+	background-image: url(../images/social-t-01.svg);
+}
+
+.social1:hover,
+.social2:hover,
+.social3:hover {
+	background-position: bottom;
+}
+
+footer {
+	margin-top: 0;
+	padding: 20px 0;
+	background-color: #000;
+}
+
+footer p {
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+footer a {
+	color: #fff;
+}
+
+@media only screen and (min-width: 20em) {
+	.logo a{
+		float: left;
+		width: 170px;
+		display: inline; 
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 35em) {
+	header {
+		float: left;
+		margin-right: 25px;
+	}
+	
+	main {
+		margin-left: 200px;
+	}
+	
+	.logo a{
+		display: block;
+	}
+	
+	footer p {
+		margin-top: 5px;
+	}
+	
+	.portfolio-left {
+		float: left;
+		width: 45%;
+	}
+	
+	.portfolio-right {
+		float: right;
+		width: 45%;
+		margin-right: 10%;
+	}	
+	
+}
+
+@media only screen and (min-width: 50em) {
+	body {
+		margin: 0 12%;
+		box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+	}
+}
+
+/*========NAV=======*/
+
+nav a,
+nav a:link,
+nav a:visited {
+	display: block;
+	padding: 13px 20px;
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	margin: 0;
+	font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+}
+
+nav a:hover,
+nav a:focus, 
+nav a:active { 
+	color: #000;
+	background-color: #42dbac;
+}
+
+@media only screen and (min-width: 15em) {
+	nav a,
+	nav a:link,
+	nav a:visited {
+		float: left;
+		display: inline-block;
+		padding: 7px 5%;
+		width: 33.3%;
+		text-align:center;
+	}
+}
+
+@media only screen and (min-width: 20em) {
+	nav a,
+	nav a:link,
+	nav a:visited {
+		float: right;
+		display: inline-block;
+		padding: 7px 17px;
+		margin-top: 15px;
+		width: 125px;
+		text-align:right;
+	}
+}
+
+@media only screen and (min-width: 25em) {
+	nav a,
+	nav a:link,
+	nav a:visited {
+		margin-left: 25%;
+	}
+}
+
+@media only screen and (min-width: 35em) {
+	nav a,
+	nav a:link,
+	nav a:visited {
+		float: left;
+		margin: 10px 90% 0 0;
+		text-align: left;
+		width: 170px;
+		padding: 7px 17px;
+	}
+}
+
+/*========H Styling=======*/
+
+h1,
+h2 {
+	color: #000;
+	padding: 10px 5px 10px 15px;
+	margin: 10px 0 0px 0;
+	font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+}
+
+h2 {
+	border-top: 4px solid #000;
+}
+
+@media only screen and (min-width: 44em){
+	h1{
+		margin-top: 3%;
+	}
+}
+
+/*========A & UL/OL=======*/
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #42dbac;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+/*========CLEARFIX=======*/
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both; /* the wrapper must go clear around the clearfix */
+}
+
+.clearfix {
+	*zoom: 1;
+}
