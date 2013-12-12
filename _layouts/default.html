@@ -8,13 +8,13 @@
 
 	<meta name="handheldfriendly" content="true"><!--this is the oldest support system-->
 	<meta name="mobileoptimized" content="240"> <!--content has the minimum resolution-->
-	
+
 	<link rel="shortcut icon" href="favicon.ico">
-	
+
 	<link rel="apple-touch-icon" sizes="114x114" href="/touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/touch-icon-72x72.png">
 	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
-	
+
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="/touch-icon-iphone-precomposed.png">
@@ -22,26 +22,32 @@
 </head>
 <body class="clearfix">
 
-	<header class="clearfix">
-		<div class="logo">
-			<a href="index.html"><img src="img/logo.svg" alt="Jillim Designs"></a>
-		</div>	
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#Portfolio">Portfolio</a></li>
-				<li><a href="#Contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-		
-	<main>
-		
-	{{content}}	
-		
-	</main>	
+	<div class="body">
+
+		<header class="clearfix">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.svg" alt="Jillim Designs"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html" rel="home">Home</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main">
+
+		{{content}}
+
+		</main>
+
+	</div>
+
 	<footer>
 		<p>© 2013 Jillim Designs. All rights reserved.</p>
 	</footer>
+
 </body>
 </html>
