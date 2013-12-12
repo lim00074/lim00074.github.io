@@ -8,7 +8,7 @@
 }
 
 html {
-	background-color: #222;
+/*	background-color: #222;*/
 	font-size: 100%;
 	font-family: 'Questrial', Arial, Helvetica, sans-serif;
 	color: #999;
@@ -118,50 +118,70 @@ footer a {
 	.logo a{
 		float: left;
 		width: 170px;
-		display: inline; 
+		display: inline;
 		padding-right: 0;
+	}
+
+	.portrait img {
+		float: left;
+		width: 30%;
+		margin-top: 0;
 	}
 }
 
 @media only screen and (min-width: 35em) {
 	header {
 		float: left;
+		width: 170px;
 		margin-right: 25px;
 	}
-	
-	main {
+
+	.main {
 		margin-left: 200px;
 	}
-	
+
 	.logo a{
 		display: block;
 	}
-	
+
 	footer p {
 		margin-top: 5px;
 	}
-	
+
 	.portfolio-left {
 		float: left;
 		width: 45%;
 	}
-	
+
 	.portfolio-right {
 		float: right;
 		width: 45%;
 		margin-right: 10%;
-	}	
-	
+	}
+
+	.portfolio-full {
+		width: 93.5%;
+	}
+
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 60em) {
+
+	.logo a {
+		padding-left: 0;
+	}
+
 	p {
 		margin-right: 50px;
 	}
-	
-	body {
-		margin: 0 12%;
-		box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+
+	.body {
+		margin: 30px 12% 0 12%;
+/*		box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);*/
+	}
+
+	footer {
+		padding: 5px;
 	}
 }
 
@@ -180,8 +200,8 @@ nav a:visited {
 }
 
 nav a:hover,
-nav a:focus, 
-nav a:active { 
+nav a:focus,
+nav a:active {
 	color: #000;
 	background-color: #42dbac;
 }
@@ -215,7 +235,7 @@ nav a:active {
 	nav a,
 	nav a:link,
 	nav a:visited {
-		margin-left: 25%;
+		margin-left: 23%;
 	}
 }
 
